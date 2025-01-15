@@ -1,0 +1,398 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  
+}
+
+:root{
+
+    --textcolor:rgb(38 50 56);
+    --navbar:#1b2226;
+    --bodybackground: rgb(250 250 250)
+
+}
+
+body{
+background-color: var(--bodybackground);
+margin: 0;
+height: 100vh;
+ 
+}
+
+body h2{
+    font-size: 3em;
+    font-weight: 500;   
+    color: black;
+}
+
+/* ---------- navbar generale -------------- */
+
+
+.nav {
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:var(--navbar);
+    backdrop-filter: blur(20px);
+    z-index: 1000;
+    font-family:'Courier New', Courier, monospace;
+
+
+
+}
+  
+/* ---------- navbar parte sinistra / logo -------------- */
+
+
+  .logo {
+    width: 10%;
+  }
+  
+  
+  .io{
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    margin-left: 10%;
+    
+  }
+
+  .io:hover {
+    opacity: 1;
+  }
+
+  /* ---------- navbar parte centrale voci menu -------------- */
+  .menu {
+    display: flex;
+    gap: 2.5em;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+  
+  .menu li {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu a {
+    color: white;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .menu a:hover {
+    opacity: 1;
+    font-size: 20px;
+   
+  }
+
+  /* ---------- navbar parte destra contatti e linkedin -------------- */
+.contatti{
+    width: 10%;
+    font-size: 20px;
+
+}
+  
+  .social {
+
+    color: rgb(10, 102, 194);
+    cursor:pointer;
+    transition: 0.3s ease-in-out;
+    
+
+  }
+  
+  .social:hover {
+
+    color: white;
+    font-size: 25px;
+  }
+
+  .contattami {
+   
+
+    color: WHITE;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+    
+  }
+    
+  .contattami:hover {
+
+    color: white;
+    font-size: 25px;
+    opacity: 1;
+
+
+  }
+  
+/* ---------- inizio home body -------------- */
+
+#menu{
+
+    color:black;
+    font-size: 3em;
+    display: none;
+}
+/*  ------ testata presentazione ----------- */
+
+#home{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: black;
+    opacity: 0.8;
+    gap: 2em;
+    padding-top: 15%;
+    min-width: 20%;
+}
+
+#home img{
+
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+
+.info-box{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap:1em;
+    max-width: 700px;
+
+}
+
+.info-box h2{
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.info-box h3{
+    
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.info-box p{
+
+    letter-spacing: 0.2px;
+    text-align: justify;
+    
+}
+
+.btn-box {
+
+    display: flex;
+    gap: 1em;
+}
+
+.btn-box2 {
+
+    display: flex;
+    gap: 1em;
+    background-color: var(--background);
+    color: white;
+}
+
+
+/* ------ Card section ----------- */
+
+.articoli{
+
+   display: flex;
+   justify-content: center;
+   gap:2EM;
+   margin-top: 10%;
+}
+
+.container{
+
+}
+
+.card {
+
+    display: grid;
+    border: 22px solid black;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 150px 90px;
+    box-shadow: 5px 5px 15px #263238;
+    background-color: var(--navbar);
+    color: white;
+    border-radius: 20px;
+    border-color: var(--navbar) ;
+    text-align: center;
+    opacity: 0.90;
+    transition: 0.3s ease-in-out;
+ }
+  
+  .card:hover{
+    opacity: 1;
+  }
+
+  .card img{
+
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+
+  }
+
+  .content{
+    margin-top: 10%;
+    color: white;
+    overflow: hidden;
+
+  }
+
+  .content h4{
+
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+
+  .content p{
+    font-size: 12vh;
+
+
+  }
+
+  .content a{
+
+
+
+  }
+
+
+  .vai-articolo{
+    margin-top: 10%;
+    text-decoration: none;
+    font-size: 11px;
+    font-style: italic;
+    display: inline-block;
+    padding: 10px 10px;
+    background-color: rgb(6, 7, 8);
+    border-radius: 20px;
+
+
+  }
+
+  /* about section */
+  #about {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .about-sec {
+
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 1px;
+    width: 800px;
+    
+    
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;  /* per centrare gli elementi dentro la riga */
+    flex-wrap: wrap;  /* per permettere la disposizione delle colonne su più righe se necessario */
+  }
+  
+  .about-col-1 {
+    flex-basis: 35%;
+    text-align: center;  /* centra l'immagine */
+  }
+  
+  .about-col-1 img {
+    width: 70%;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  .about-col-2 {
+    flex-basis: 60%;
+    text-align: justify;  /* centra il testo dentro la colonna */
+  }
+  
+  .sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: aqua;
+  }
+  
+#form-contatti {
+
+    padding: 30%;
+    background-color: white;
+}
+
+.tab-titles{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.tab-links{
+    margin-right: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+
+}
+
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ease-in-out;
+}
+
+.tab-links.active-link::after{
+    width: 10px;
+    background-color: var(--textcolor);
+
+}
+
+.tab-contents ul li{
+
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+
+    color:red;
+    font-size: 14px;
+}
+
+/* PARTE RELATIVA AGLI ARTICOLI */
+
